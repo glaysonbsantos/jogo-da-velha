@@ -26,8 +26,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    font-family: sans-serif;
-    font-size: 40px;
-    color: white;
+.o::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    content: '\2B55';
+    font-size: 50px;
+}
+
+.x::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    content: '\274C';
+    font-size: 50px;
 }
