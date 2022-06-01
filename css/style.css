@@ -13,10 +13,26 @@
 .main {
   display: grid;
   justify-content: center;
-  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "title title title"
+    "square square square"
+    "square square square"
+    "square square square"
+    "button button button";
+}
+
+h1 {
+  grid-area: title;
+
+  text-align: center;
+  font-family: sans-serif;
+
+  margin-bottom: 30px;
 }
 
 .square {
+  grid-area: square square square;
+
   width: 100px;
   height: 100px;
   background-color: #202120;
@@ -44,4 +60,29 @@
 
   content: "\274C";
   font-size: 50px;
+}
+
+button {
+  grid-area: button;
+
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+
+  margin-top: 30px;
+
+  height: 40px;
+
+  border-radius: 5px;
+  border: none;
+
+  cursor: pointer;
+
+  background-color: #bebebe;
+  color: #202120;
+}
+
+button:hover {
+  background-color: #4a4d4a;
+  color: white;
 }
