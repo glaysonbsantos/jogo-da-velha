@@ -37,4 +37,11 @@ function updateSquares() {
       square.innerHTML = "";
     }
   });
+
+  board = ["", "", "", "", "", "", "", "", ""];
+  playerTurn = 0;
+  gameOver = false;
 }
+
+let btn = document.getElementById("btn");
+btn.addEventListener("click", updateSquares());
