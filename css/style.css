@@ -25,7 +25,10 @@ h1 {
   grid-area: title;
 
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 
   margin-bottom: 30px;
 }
@@ -66,23 +69,32 @@ button {
   grid-area: button;
 
   text-align: center;
-  font-family: sans-serif;
-  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 
   margin-top: 30px;
 
   height: 40px;
 
-  border-radius: 5px;
+  border-radius: 45px;
   border: none;
 
   cursor: pointer;
 
   background-color: #bebebe;
   color: #202120;
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
 }
 
 button:hover {
   background-color: #4a4d4a;
   color: white;
+
+  box-shadow: 0px 15px 20px rgba(71, 71, 71, 0.4);
+
+  transform: translateY(-7px);
 }
