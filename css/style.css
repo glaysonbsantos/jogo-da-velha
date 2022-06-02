@@ -15,6 +15,7 @@
   justify-content: center;
   grid-template-areas:
     "title title title"
+    "instructions instructions instructions "
     "square square square"
     "square square square"
     "square square square"
@@ -30,7 +31,17 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2.5px;
 
-  margin-bottom: 30px;
+  margin: 5px;
+}
+
+p {
+  grid-area: instructions;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+
+  width: 310px;
+  margin: 5px 5px 20px 5px;
 }
 
 .square {
@@ -45,6 +56,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .o::after {
