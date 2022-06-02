@@ -25,9 +25,11 @@
 h1 {
   grid-area: title;
 
+  width: 310px;
+
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 35px;
+  font-size: 33px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
 
@@ -39,6 +41,8 @@ p {
 
   font-family: "Roboto", sans-serif;
   font-size: 13px;
+
+  text-align: center;
 
   width: 310px;
   margin: 5px 5px 20px 5px;
