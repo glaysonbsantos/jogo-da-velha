@@ -14,8 +14,7 @@
   display: grid;
   justify-content: center;
   grid-template-areas:
-    "title title title"
-    "instructions instructions instructions "
+    "text text text"
     "square square square"
     "square square square"
     "square square square"
@@ -23,29 +22,28 @@
 }
 
 h1 {
-  grid-area: title;
-
-  width: 310px;
-
-  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 33px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
 
-  margin: 5px;
+  margin: 5px 5px 20px 5px;
 }
 
 p {
-  grid-area: instructions;
-
   font-family: "Roboto", sans-serif;
   font-size: 13px;
 
+  margin: 5px 5px 20px 5px;
+}
+
+.text {
+  grid-area: text;
+
+  width: 320px;
   text-align: center;
 
-  width: 310px;
-  margin: 5px 5px 20px 5px;
+  margin: 5px;
 }
 
 .square {
